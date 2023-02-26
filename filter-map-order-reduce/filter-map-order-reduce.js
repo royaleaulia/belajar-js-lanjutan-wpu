@@ -30,9 +30,18 @@ console.log(NewAngka3)
 
 // reduce memiliki dua argument
 // accumulator adalah hasil akumulasi
-// currentValue adalah value selanjutnya setelah terakumulasi
-const NewAngka4 = angka.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue
-})
+// currentValue adalah value  setelah terakumulasi
+// untuk nilai awal entah mengapa tidak bisa menggunakan return
+const NewAngka4 = angka.reduce((accumulator, currentValue) =>
+    accumulator + currentValue, 4
+)
 console.log(NewAngka4)
+
+
+//Method Chaining adalah menggabungkan semuanya
+const NewAngka5 = angka.filter((a) => { return a > 3 })
+    .map((a) => { return a * 3 })
+    .reduce((accumulator, currentValue) => { return accumulator + currentValue })
+console.log(NewAngka5)
+
 
