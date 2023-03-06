@@ -3,19 +3,19 @@
 // node manipulation
 
 
-//method manipulaton element
-//element.innerHTML = mengubah isi dari html boleh membuat tag atau apapun
-//element.style.<properti>
-//element.setAttribute() = menimpa
-//element.getAttribut() = mengambil
-//element.removeAttribute() = menghapus
-//element.classList = Mengelola kelas
-    //element.classList.add()
-    //element.classList.remove()
-    //element.classList.toggle()
-    //element.classList.item() = mencari urutan class
-    //element.classList.contains() = nanya ada gak kelas tersebut
-    //element.classList.replace('', '') = menghapus class yang diinginkan dan mengganti kelas tersebut
+// method manipulaton element
+// element.innerHTML = mengubah isi dari html boleh membuat tag atau apapun
+// element.style.<properti>
+// element.setAttribute() = menimpa
+// element.getAttribut() = mengambil
+// element.removeAttribute() = menghapus
+// element.classList = Mengelola kelas
+//     element.classList.add()
+//     element.classList.remove()
+//     element.classList.toggle()
+//     element.classList.item() = mencari urutan class
+//     element.classList.contains() = nanya ada gak kelas tersebut
+//     element.classList.replace('', '') = menghapus class yang diinginkan dan mengganti kelas tersebut
 
 const judul = document.getElementById('judul')
 judul.innerHTML = "<div id='dontdie'><em>Dont Die</em></div>"
