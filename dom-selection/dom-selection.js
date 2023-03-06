@@ -31,3 +31,6 @@ paragraf4.style.fontSize = '30px'
 //memilih semua elemen selector yang ada di halaman contohnya halaman p
 const pallsel= document.querySelectorAll('p')
 pallsel[0].style.backgroundColor = 'red'
+
+//noderoot
+//
