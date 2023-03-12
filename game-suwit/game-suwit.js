@@ -91,6 +91,7 @@ pil.forEach(function(pil){
         const pilihanComputer = getpilihanComputer();
         const pilihanPlayer = pil.className;
         const hasil = getHasil(pilihanComputer, pilihanPlayer)
+        
         const info = document.querySelector('.info')
         info.innerHTML = ''
         putarGambar()
@@ -98,8 +99,8 @@ pil.forEach(function(pil){
         setTimeout(function(){
             const imgKomputer = document.querySelector('.img-komputer')
             imgKomputer.setAttribute('src', 'img/' + pilihanComputer + '.png')
-            
             info.innerHTML = hasil
+            alert(hasil)
         }, 1000)
     })
 })
