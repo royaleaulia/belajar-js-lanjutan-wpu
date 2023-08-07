@@ -88,9 +88,10 @@ function putarGambar(){
 const pil = document.querySelectorAll('li img')
 pil.forEach(function(pil){
     pil.addEventListener('click', function(){
+
         const pilihanComputer = getpilihanComputer();
         const pilihanPlayer = pil.className;
-        const hasil = getHasil(pilihanComputer, pilihanPlayer)
+        const hasil = getHasil(pilihanComputer, pilihanPlayer);
         
         const info = document.querySelector('.info')
         info.innerHTML = ''
@@ -100,8 +101,8 @@ pil.forEach(function(pil){
             const imgKomputer = document.querySelector('.img-komputer')
             imgKomputer.setAttribute('src', 'img/' + pilihanComputer + '.png')
             info.innerHTML = hasil
-            alert(hasil)
-        }, 1000)
+            
+        }, 1500)
     })
 })
 
